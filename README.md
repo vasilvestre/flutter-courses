@@ -1,5 +1,7 @@
 # flutter_app
 
+![CI](https://github.com/vasilvestre/flutter-courses/workflows/CI/badge.svg?branch=master)
+
 A new Flutter application.
 
 ## Getting Started
