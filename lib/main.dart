@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/myHomePage.dart';
+import 'package:flutter_app/ui/pages/detailsPage.dart';
+import 'package:flutter_app/ui/pages/rickAndMortyCharactersList.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,8 +22,11 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: RickAndMortyListPage(title: 'Rick and Mort list'),
+      routes: {
+        RickAndMortyListPage.routeName: (context) => RickAndMortyListPage(),
+        DetailsPage.routeName: (context) => DetailsPage()
+      },
     );
   }
 }
-
